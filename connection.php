@@ -1,10 +1,16 @@
-<?php      
-    $db_host = "localhost";  
-    $db_user = file_get_contents("username.txt");  
-    $db_password = file_get_contents("password.txt");  
-    $db_name = "QuestKeeper";  
+<?php    
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+    $db_hostname = 'localhost';  
+    $db_username = file_get_contents('username.txt');  
+    $db_password = file_get_contents('password.txt');  
+    $db_database = 'QuestKeeper';  
     
-    $con = mysqli_connect($db_host, $db_user, $db_password, $db_name);  
-    if(mysqli_connect_errno()) {  
-        die("Failed to connect with MySQL: ". mysqli_connect_error());  
+    
+    $mysqli = mysqli_connect($db_hostname, $db_username, $db_password, $db_database);  
+
+    if(!$mysqli) {
+        echo "Fout";
+        echo "Error: " . mysqli_connect_error();
     }  
