@@ -5,45 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🌿 QuestKeeper 🌿</title>
     <style><?php include 'style.css';?></style>
+    <script src="js/login.js" defer></script>
 </head>
 <body>
-<div id = "frm">  
-        <h1>Login</h1>  
-        <form name="f1" action = "loginSubmit.php" onsubmit = "return validation()" method = "POST">  
-            <p>  
-                <label> UserName: </label>  
-                <input type = "text" id ="user" name  = "user" />  
-            </p>  
-            <p>  
-                <label> Password: </label>  
-                <input type = "password" id ="pass" name  = "pass" />  
-            </p>  
-            <p>     
-                <input type =  "submit" id = "btn" value = "Login" />  
-            </p>  
-        </form>  
-    </div>  
-    <script>  
-            function validation()  
-            {  
-                var id=document.f1.user.value;  
-                var ps=document.f1.pass.value;  
-                if(id.length=="" && ps.length=="") {  
-                    alert("User Name and Password fields are empty");  
-                    return false;  
-                }  
-                else  
-                {  
-                    if(id.length=="") {  
-                        alert("User Name is empty");  
-                        return false;  
-                    }   
-                    if (ps.length=="") {  
-                    alert("Password field is empty");  
-                    return false;  
-                    }  
-                }                             
-            }  
-        </script>
+    <main class="main-login-wrapper">
+        <div class="login-wrapper">
+            <h1>Login</h1>
+            <form class="login-form">
+                <input type="text" id="login-user" placeholder="Username" required/>
+                <input type="password" id="login-pass" placeholder="password" required/>
+                <button type="button" id="login-btn">login</button>
+                <a class="toggle-login">Sign up</a>
+            </form> 
+        </div>
+
+        <div class="signup-wrapper hidden">
+            <h1>Sign Up</h1>
+            <form class="signup-form">
+                <input type="text" id="login-user" placeholder="Username" required/>
+                <input type="email" id="signup-email" placeholder="email" required/>
+                <input type="password" id="login-pass" placeholder="password" required/>
+                <button type="button" id="sign-up-btn">Sign up</button>
+                <a class="toggle-login">Login</a>
+            </form> 
+        </div>
+    </main>
+
 </body>
 </html>

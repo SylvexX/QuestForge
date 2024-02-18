@@ -1,7 +1,7 @@
 <?php      
     include('_database.php');
-    $username = $_POST['user'];  
-    $password = $_POST['pass'];  
+    $username = $_POST['username'];  
+    $password = $_POST['password'];  
         
     //to prevent from mysqli injection  
     $username = stripcslashes($username);  
@@ -15,8 +15,8 @@
     $count = mysqli_num_rows($result);  
     
     if($count == 1){  
-        echo "<h1><center> Login successful </center></h1>";  
+        echo "TEST";  
     }  
     else{  
-        echo "<h1> Login failed. Invalid username or password.</h1>";  
+        echo "jPO";  
     }     
