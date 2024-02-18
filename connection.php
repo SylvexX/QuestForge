@@ -3,8 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
     $db_hostname = 'localhost';  
-    $db_username = file_get_contents('username.txt');  
-    $db_password = file_get_contents('password.txt');  
+    $db_username = 'QK_Admin';  
+    $db_password = 'yannickDB1!';  
     $db_database = 'QuestKeeper';  
     
     
