@@ -9,14 +9,16 @@
     $username = mysqli_real_escape_string($mysqli, $username);  
     $password = mysqli_real_escape_string($mysqli, $password);  
           
-    $sql = "select *from login where username = '$username' and password = '$password'";  
+    $sql = "SELECT * FROM login WHERE username = '$username'";  
     $result = mysqli_query($mysqli, $sql);  
+        if ($result) { // If the query is
+        if (mysqli_num_rows($result) == 0) { // and there are rows in the
+            die("username doesn't exists");
+        }
+    };
+
     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
-    $count = mysqli_num_rows($result);  
-    
-    if($count == 1){  
-        echo "TEST";  
-    }  
-    else{  
-        echo "jPO";  
-    }     
+    if(password_verify($password, $row['password'])) {
+        die("TEST");
+    }
+    die ("jPO");

@@ -22,10 +22,10 @@
         <div class="signup-wrapper hidden">
             <h1>Sign Up</h1>
             <form class="signup-form">
-                <input type="text" id="login-user" placeholder="Username" required/>
+                <input type="text" id="signup-user" placeholder="Username" required/>
                 <input type="email" id="signup-email" placeholder="email" required/>
-                <input type="password" id="login-pass" placeholder="password" required/>
-                <button type="button" id="sign-up-btn">Sign up</button>
+                <input type="password" id="signup-pass" placeholder="password" required/>
+                <button type="button" id="signup-btn">Sign up</button>
                 <a class="toggle-login">Login</a>
             </form> 
         </div>

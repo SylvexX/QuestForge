@@ -33,3 +33,24 @@ function loginSubmit() {
         }
     }
 };
+
+//signup
+let signBtn = document.getElementById('signup-btn');
+signBtn.addEventListener('click', signupSubmit);
+function signupSubmit() {
+    const userName = document.getElementById('signup-user').value;
+    const userEmail = document.getElementById('signup-email').value;
+    const password = document.getElementById('signup-pass').value;
+    const signupData = new FormData();
+    signupData.append("username", userName);
+    signupData.append("email", userEmail);
+    signupData.append("password", password);
+
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://localhost:3000/signupSubmit.php");
+
+    xhr.send(signupData);
+    xhr.onload = function () {
+        alert(xhr.responseText);
+    }
+}
