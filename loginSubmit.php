@@ -1,5 +1,6 @@
 <?php      
     include('_database.php');
+    include('_root.php');
     $username = $_POST['username'];  
     $password = $_POST['password'];  
         
@@ -17,8 +18,9 @@
         }
     };
 
-    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
     if(password_verify($password, $row['password'])) {
+        $_SESSION['login'] = true;
         die("TEST");
     }
     die ("jPO");

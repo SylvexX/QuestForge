@@ -25,9 +25,9 @@ function loginSubmit() {
 
     xhr.send(loginData);
     xhr.onload = function () {
-        alert(xhr.responseText);
         if (xhr.responseText == "TEST") {
-            alert("success login");
+            alert("Welcome");
+            window.location.href="todo.php";
         } else {
             alert("failed to login");
         }
