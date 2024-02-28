@@ -6,15 +6,28 @@
     <title>🌿 QuestKeeper 🌿</title>
     <link  rel="stylesheet" href="style.css">
     <script src="js/login.js" defer></script>
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main class="main-login-wrapper">
         <div class="login-wrapper">
+            <div class="form-title">
             <h1>Login</h1>
+            </div>
             <form class="login-form">
-                <input type="text" id="login-user" placeholder="Username" required/>
-                <input type="password" id="login-pass" placeholder="password" required/>
-                <button type="button" id="login-btn">login</button>
+
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="login-user" placeholder="Username" required/>
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="login-pass" placeholder="password" required/>
+                </div>
+                <div class="login-btn-container">
+                    <button type="button" id="login-btn">login</button>
+                </div>
                 <a class="toggle-login">Sign up</a>
             </form> 
         </div>
