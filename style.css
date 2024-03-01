@@ -29,6 +29,8 @@
 }
 
 .form-title {
+    font-family: "MedievalSharp", cursive    ;
+    letter-spacing: 10px;
     display: flex;
     justify-content: center;
     padding: 30px;
