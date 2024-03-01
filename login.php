@@ -6,9 +6,9 @@
     <title>🌿 QuestKeeper 🌿</title>
     <link  rel="stylesheet" href="style.css">
     <script src="js/login.js" defer></script>
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous" defer></script>
 </head>
-<body>
+<body id="background-image">
     <main class="main-login-wrapper">
         <div class="login-wrapper">
             <div class="form-title">
