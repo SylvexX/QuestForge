@@ -5,11 +5,9 @@ xhr.send();
 xhr.onload = function () {
     let todoData = JSON.parse(xhr.responseText);
 
-    let output = '';
     todoData.forEach(todoItem => {
         console.log(todoItem);
-        output += `<li>${todoItem}</li>`;
+        document.getElementById('outpyut').innerHTML += `<li>${todoItem.naam}</li>`;
     });
-    document.getElementById('outpyut').innerHTML = output;
 
 }
