@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/addTodoItem.js" defer></script>
+    <script src="js/getTodoData.js" defer></script>
     <title>🌿 QuestKeeper 🌿</title>
 </head>
 <body>
@@ -17,5 +18,8 @@
         <input type="text" id="add-item-input" placeholder="maak dit ....." required/>
         <input type="button" id="add-item-btn" value="Voeg Toe"/>
     </form>
+    <div id="outpyut">
+        
+    </div>
 </body>
 </html>
