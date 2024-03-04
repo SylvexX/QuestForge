@@ -5,10 +5,11 @@ xhr.send();
 xhr.onload = function () {
     let todoData = JSON.parse(xhr.responseText);
 
+    let output = '';
     todoData.forEach(todoItem => {
         console.log(todoItem);
-        // create li element for each item in the array
-        document.getElementById('outpyut').innerHTML += `<li>${todoItem}`;
+        output += `<li>${todoItem}</li>`;
     });
+    document.getElementById('outpyut').innerHTML = output;
 
 }
