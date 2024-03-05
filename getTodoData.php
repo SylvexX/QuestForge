@@ -1,7 +1,11 @@
 <?php
     include('_database.php');
+    include('_root.php');
 
-    $sql = "SELECT * FROM `todo`";
+    $userID = $_SESSION['userID'];
+
+
+    $sql = "SELECT * FROM `todo` WHERE `userID` = '$userID'";
 
     $result = mysqli_query($mysqli, $sql);
 

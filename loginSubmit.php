@@ -21,6 +21,7 @@
     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
     if(password_verify($password, $row['password'])) {
         $_SESSION['login'] = true;
+        $_SESSION['userID'] = $row['userID'];
         die("TEST");
     }
     die ("jPO");
