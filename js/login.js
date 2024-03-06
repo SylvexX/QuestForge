@@ -26,10 +26,21 @@ function loginSubmit() {
     xhr.send(loginData);
     xhr.onload = function () {
         if (xhr.responseText == "TEST") {
-            alert("Welcome");
-            window.location.href="todo.php";
+            Swal.fire({
+                title: 'Welcome',
+                text: 'worthy traveler',
+                icon: 'success',
+                confirmButtonText: 'nice'
+              }).then((result) => {
+                  window.location.href="todo.php";
+              })
         } else {
-            alert("failed to login");
+            Swal.fire({
+                title: 'Kan niet inloggen',
+                text: 'Incorrect username of password',
+                icon: 'error',
+                confirmButtonText: 'ok'
+              })
         }
     }
 };
