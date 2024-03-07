@@ -46,7 +46,7 @@
     text-transform: uppercase;
 }
 
-.main-login-wrapper  .login-form {
+.main-login-wrapper  .login-form, .main-login-wrapper .signup-form {
     display: grid;
     text-align: center;
     justify-content: center;
@@ -86,7 +86,7 @@
     color: rgb(141, 161, 161);
 }
 
-.login-form button {
+.login-form button, .signup-form button {
     width: 150px;
     background-color: rgb(54, 85, 85);
     border: none;
@@ -114,4 +114,37 @@
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.main-login-wrapper {
+    animation: fadeIn 1.5s   ease-in-out forwards;
+    -webkit-animation: fadeIn 1.5s   ease-in-out forwards;;
+    -moz-animation: fadeIn 1.5s  ease-in-out forwards;;
+    -o-animation: fadeIn 1.5s    ease-in-out forwards;;
+    -ms-animation: fadeIn 1.5s   ease-in-out forwards;;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }

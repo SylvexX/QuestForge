@@ -36,12 +36,29 @@
         </div>
 
         <div class="signup-wrapper hidden">
-            <h1>Sign Up</h1>
+            <div class="form-title">
+                <h1>Sign Up</h1>
+            </div>
             <form class="signup-form">
-                <input type="text" id="signup-user" placeholder="Username" required/>
-                <input type="email" id="signup-email" placeholder="email" required/>
-                <input type="password" id="signup-pass" placeholder="password" required/>
-                <button type="button" id="signup-btn">Sign up</button>
+
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="signup-user" placeholder="Username" required/>
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="signup-email" placeholder="email" required/>
+                </div>
+
+                <div class="input-field">
+                    <i  class="fas fa-lock"></i>
+                    <input type="password" id="signup-pass" placeholder="password" required/>
+                </div>
+
+                <div class="login-btn-container">
+                    <button type="button" id="signup-btn">Sign up</button>
+                </div>
                 <a class="toggle-login">Login</a>
             </form> 
         </div>
