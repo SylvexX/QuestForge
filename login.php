@@ -63,6 +63,15 @@
             </form> 
         </div>
     </main>
-
+    <div class="social-link">
+        <ul class="social-list">
+            <a href="https://github.com/SylvexX" target="_blank">
+                <li class="icon github">
+                    <span class="tooltip">Github</span>
+                    <span><i class="fab fa-github"></i></span>
+                </li>
+            </a>
+        </ul>
+    </div>
 </body>
 </html>
