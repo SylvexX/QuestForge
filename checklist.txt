@@ -1,1 +1,18 @@
+// must
+- mark as complete
+- Verwijderen
+- aanpassen/updaten
+- prioriteit
+- einddatum
+
+//should
+- uncompleten/reverse
+- subitems (taken van een taak)
+
+//could
 - Color switch knop
+- native 
+- offline modus
+- kunnen delen
+- mensen kunnen koppelen
+- catagorien

@@ -21,7 +21,7 @@ function loginSubmit() {
     loginData.append("password", password);
 
     let xhr = new  XMLHttpRequest();
-    xhr.open("POST","http://localhost:3000/loginSubmit.php");
+    xhr.open("POST","http://localhost:6969/loginSubmit.php");
 
     xhr.send(loginData);
     xhr.onload = function () {
@@ -58,7 +58,7 @@ function signupSubmit() {
     signupData.append("password", password);
 
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:3000/signupSubmit.php");
+    xhr.open("POST", "http://localhost:6969/signupSubmit.php");
 
     xhr.send(signupData);
     xhr.onload = function () {
