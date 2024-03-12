@@ -25,7 +25,7 @@ function addItemSubmit() {
     todoData.append("name", voegToeData);
 
     let xhr = new  XMLHttpRequest();
-    xhr.open("POST","http://localhost:3000/addTodoItem.php");
+    xhr.open("POST","http://localhost:6969/addTodoItem.php");
 
     xhr.send(todoData);
     xhr.onload = function () {

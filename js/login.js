@@ -62,6 +62,14 @@ function signupSubmit() {
 
     xhr.send(signupData);
     xhr.onload = function () {
-        alert(xhr.responseText);
+        if (xhr.responseText == "Email already exists") {
+            Swal.fire({
+                title: 'You are already a keeper',
+                icon: 'error',
+                confirmButtonText: 'login'
+              }).then((result) => {
+                  window.location.href="login.php";
+              })
+        }
     }
 }
