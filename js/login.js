@@ -30,7 +30,9 @@ function loginSubmit() {
                 title: 'Welcome',
                 text: 'worthy traveler',
                 icon: 'success',
-                confirmButtonText: 'nice'
+                showConfirmButton: false,
+                timer: 1400
+                // confirmButtonText: 'nice'
               }).then((result) => {
                   window.location.href="todo.php";
               })
@@ -64,12 +66,20 @@ function signupSubmit() {
     xhr.onload = function () {
         if (xhr.responseText == "Email already exists") {
             Swal.fire({
-                title: 'You are already a keeper',
-                icon: 'error',
+                title: `You're already keeping your Quests`,
+                text: 'User already exists!',
+                icon: 'info',
+                confirmButtonText: 'try again or login'
+              });
+        } else {
+            Swal.fire({
+                title: `Welcome`,
+                text: 'Account has been made ',
+                icon: 'success',
                 confirmButtonText: 'login'
               }).then((result) => {
-                  window.location.href="login.php";
-              })
+                window.location.href="login.php";
+            });
         }
     }
 }

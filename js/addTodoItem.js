@@ -15,7 +15,7 @@ function addItemSubmit() {
     console.log(voegToeData);
     if (voegToeData == "") {
         alert("Cheese Pizza");
-        //die fancy alert toevoegen
+        //die fancy alert toevoegen (ERROR NIETS INGEVULD)
         return;
         
     }
@@ -31,11 +31,11 @@ function addItemSubmit() {
     xhr.onload = function () {
         if (xhr.responseText == "je hebt geluk!, je gaat niet dood") {
             alert("Welcome");
-                    //die fancy alert toevoegen
+                    //die fancy alert toevoegen (SUCCESS GEUPLOAD!)
 
         } else {
             alert("failed to login");
-                    //die fancy alert toevoegen
+                    //die fancy alert toevoegen (NIET GELUTK!)
 
         }
         showTodoItems();
