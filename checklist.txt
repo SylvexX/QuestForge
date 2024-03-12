@@ -4,6 +4,7 @@
 - aanpassen/updaten
 - prioriteit
 - einddatum
+- comments adden
 
 //should
 - uncompleten/reverse
