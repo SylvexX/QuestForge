@@ -14,7 +14,7 @@ function addItemSubmit() {
     let voegToeData = document.getElementById('add-item-input').value;
     console.log(voegToeData);
     if (voegToeData == "") {
-        alert("Cheese Pizza");
+        // alert("Cheese Pizza");
         //die fancy alert toevoegen (ERROR NIETS INGEVULD)
         Swal.fire({
             icon: "error",
@@ -47,7 +47,14 @@ function addItemSubmit() {
         } else {
             alert("failed to login");
                     //die fancy alert toevoegen (NIET GELUTK!)
-
+            Swal.fire({
+                position: "top-end",
+                icon: "error",
+                title: "Er is iets verkeer gegaan",
+                text: "probeer opnieuw",
+                showConfirmButton: false,
+                timer: 1500
+            });
         }
         showTodoItems();
     }

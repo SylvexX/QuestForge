@@ -32,7 +32,6 @@ function loginSubmit() {
                 icon: 'success',
                 showConfirmButton: false,
                 timer: 1400
-                // confirmButtonText: 'nice'
               }).then((result) => {
                   window.location.href="todo.php";
               })
@@ -65,6 +64,7 @@ function signupSubmit() {
     xhr.send(signupData);
     xhr.onload = function () {
         if (xhr.responseText == "Email already exists") {
+        //*if same as geef deze pop-up
             Swal.fire({
                 title: `You're already keeping your Quests`,
                 text: 'User already exists!',
@@ -72,6 +72,7 @@ function signupSubmit() {
                 confirmButtonText: 'try again or login'
               });
         } else {
+        //! anders deze succes popup
             Swal.fire({
                 title: `Welcome`,
                 text: 'Account has been made ',
