@@ -9,11 +9,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="js/addTodoItem.js" defer></script>
     <script src="js/getTodoData.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css">
     <title>🌿 QuestKeeper 🌿</title>
 </head>
 <body>

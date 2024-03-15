@@ -8,6 +8,15 @@
 
 .swal2-confirm {
     background-color: rgb(54, 85, 85) !important;
+    width: 300px;
+    height: 49px;
+    border-radius: 49px !important;
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
 }
 
 .swal2-backdrop-show {

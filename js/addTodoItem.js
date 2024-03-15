@@ -16,6 +16,11 @@ function addItemSubmit() {
     if (voegToeData == "") {
         alert("Cheese Pizza");
         //die fancy alert toevoegen (ERROR NIETS INGEVULD)
+        Swal.fire({
+            icon: "error",
+            title: "Kan niets adden",
+            text: "er is niets ingevuld"
+        })
         return;
         
     }
@@ -30,9 +35,15 @@ function addItemSubmit() {
     xhr.send(todoData);
     xhr.onload = function () {
         if (xhr.responseText == "je hebt geluk!, je gaat niet dood") {
-            alert("Welcome");
-                    //die fancy alert toevoegen (SUCCESS GEUPLOAD!)
-
+            // alert("Welcome");
+            //die fancy alert toevoegen (SUCCESS GEUPLOAD!)
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "aangemaakt",
+                showConfirmButton: false,
+                timer: 1500
+            });
         } else {
             alert("failed to login");
                     //die fancy alert toevoegen (NIET GELUTK!)

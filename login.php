@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🌿 QuestKeeper 🌿</title>
-    <link  rel="stylesheet" href="style.css">
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     <script src="js/login.js" defer></script>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous" defer></script>
+    
+    <link  rel="stylesheet" href="style.css">
 </head>
 <body id="background-image">
     <main class="main-login-wrapper">
