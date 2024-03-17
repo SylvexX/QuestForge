@@ -1,3 +1,4 @@
+import {disahdsaihd} from "./itemUpdate.js"
 function showTodoItems() {
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "http://localhost:6969/getTodoData.php");
@@ -9,9 +10,15 @@ function showTodoItems() {
         document.getElementById('outpyut').innerHTML = "";
         todoData.forEach(todoItem => {
             // console.log(todoItem);
-            document.getElementById('outpyut').innerHTML += `<li>${todoItem.naam}</li>`;
+            document.getElementById('outpyut').innerHTML += `
+            <div class="todo-item-wrapper">
+                ${todoItem.naam}
+                <input class="statusChecked" type="checkbox">
+                <input class="todoID" type="hidden" value="${todoItem.ID}"> 
+            </div>`;
         });
     }
 }
 
-showTodoItems();
+await showTodoItems();
+disahdsaihd();
