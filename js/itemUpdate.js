@@ -3,11 +3,17 @@ export function disahdsaihd() {
     let statusChecked = document.querySelectorAll('.statusChecked');
     console.log(statusChecked.length);
     statusChecked.forEach(statusBTN => {
-        statusBTN.addEventlistener('change', function () {
+        statusBTN.addEventListener('change', function () {
             let statusWrapper = statusBTN.parentElement;
-            const todoID = statusWrapper.getElementsByClassName('todoID')[0];
-            const statusChecked = statusWrapper.getElementsByClassName('statusChecked')[0];
+            const todoID = statusWrapper.getElementsByClassName('todoID')[0].value;
+            let statusChecked = statusWrapper.getElementsByClassName('statusChecked')[0].value;
             const statusData = new FormData();
+            if (statusChecked == "on") {
+                statusChecked = 1;
+            } else {
+                statusChecked = 0; 
+            }
+            console.log(statusChecked)
             statusData.append("ID", todoID);
             statusData.append("status", statusChecked);
     

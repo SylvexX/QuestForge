@@ -17,8 +17,8 @@ function showTodoItems() {
                 <input class="todoID" type="hidden" value="${todoItem.ID}"> 
             </div>`;
         });
+        disahdsaihd();
     }
 }
 
 await showTodoItems();
-disahdsaihd();
